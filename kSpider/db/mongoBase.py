@@ -25,7 +25,7 @@ class MongoHandler:
     def __init__(self, collection_name='default', host=HOST, port=MONGO_PORT, user=MONGO_USER, pwd=MONGO_ADMIN_PWD,db=DB_NAME):
         self.client = AsyncIOMotorClient('mongodb://{user}:{pwd}@{host}:{port}/'.format(user=user,pwd=pwd,host=host,port=port))
         self.db = self.client[db]
-        self.collection_name = collection_name  # logging
+        self.collection_name = collection_name  # for logging
         self.collection = self.db[collection_name]
 
         # self.loop = asyncio.new_event_loop()    # different loop
@@ -47,14 +47,14 @@ class MongoHandler:
 
         if not repet:
             if await self.collection.insert_one(item_data):
-                logging.info('********************save to mongodb_{collection}==> success:\n{item}'.format(
+                logging.info('********************save to mongodb_{collection} ==> success:\n{item}'.format(
                     collection=self.collection_name, item=item_data))
             else:
-                raise ('********************save to mongodb_{collection}==> fail:\n{item}'.format(
+                raise ('********************save to mongodb_{collection} ==> fail:\n{item}'.format(
                     collection=self.collection_name, item=item_data))
         else:
             logging.info(
-                '********************mongodb_{collection}==> repet :\n{item}'.format(collection=self.collection_name,
+                '********************mongodb_{collection} ==> repet :\n{item}'.format(collection=self.collection_name,
                                                                                      item=item_data))
 
     async def find(self, repet_key, need_repet, repet_value):

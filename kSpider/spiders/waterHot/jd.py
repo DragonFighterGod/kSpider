@@ -9,13 +9,12 @@ __mtime__ = '2019/3/18'
 """
 import json
 
-import logging
 import scrapy
 from sqlalchemy import Column, String, Text
 
 from kSpider.db.sqlBase import BaseModel
 from kSpider.spiders.baseSpider.genSpider import GenSpider
-from kSpider.pipelines import BaseSQLPipeline, clear_item
+from kSpider.pipelines import BaseSQLPipeline
 
 jdWaterHot_spider = 'jd_waterHot'
 jdWaterHot_h5_spider = 'jd_h5waterHot'
@@ -28,7 +27,7 @@ class JDSpider(GenSpider):
     name = jdWaterHot_spider
 
     custom_settings = GenSpider.custom_settings.copy()
-    # custom_settings['ITEM_PIPELINES'] ={'kSpider.spiders.waterHot.jd.JdSQLPipeline': 301}
+    custom_settings['ITEM_PIPELINES'] = {'kSpider.spiders.waterHot.jd.JdSQLPipeline': 301}
 
     collection_name = 'jd_waterHot'
     need_repet = True  # 查询去重
@@ -38,7 +37,7 @@ class JDSpider(GenSpider):
         page = 0
         maxPage = 3
         # maxPage = 100
-        pagesize = 1000
+        pagesize = 100
         for i in range(page, maxPage):
             url = "https://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv9794&productId=6793702&score=0&sortType=5&page={}&pageSize={}&isShadowSku=0&fold=1".format(
                 i, pagesize)
@@ -91,7 +90,7 @@ class JDH5Spider(GenSpider):
 
     def start_requests(self):
         page = 1
-        maxpage = 5
+        maxpage = 3
         # maxpage = 100
         for i in range(page, maxpage):
             url = 'https://wq.jd.com/commodity/comment/getcommentlist?callback=skuJDEvalA&sorttype=5&pagesize=10&sceneval=2&score=0&sku=6793702&page={}&t='.format(
@@ -100,7 +99,7 @@ class JDH5Spider(GenSpider):
 
     def parse_item(self, response):
         resp = response.text
-        data = resp[resp.index('{'):-1].replace('true', '1').replace('false', '0')
+        data = resp[resp.index('{'):-1].replace('true', '1').replace('false', '0')  # for json
         jresp = eval(data)
         comments = jresp['result']['comments']
         # maxpage = jresp['result']['maxPage']
@@ -128,8 +127,11 @@ class JDH5Spider(GenSpider):
 
 class JdSQLPipeline(BaseSQLPipeline):
     def process_item(self, item, spider):
-        item = clear_item(item)
-        _item = JdMysql.db_distinct(self.session, JdMysql, item, item['cid'],self.need_repet)  # self.need_repet => Pipeline open_spider
+        item = self.clear_item(item)
+
+        _item = JdMysql.db_distinct(self.session, JdMysql, item, item['cid'],
+                                    self.need_repet)  # self.need_repet => Pipeline open_spider
+
         JdMysql.save_mode(self.session, JdMysql(), _item)
         return item
 
@@ -150,7 +152,6 @@ class JdWaterHotItem(scrapy.Item):
 class JdMysql(BaseModel):
     __tablename__ = 'jd_waterHot'
 
-
     cid = Column(String(200))
     content = Column(Text())
     creationTime = Column(String(200))
@@ -163,19 +164,10 @@ class JdMysql(BaseModel):
     replies = Column(Text())
 
     @staticmethod
-    def db_distinct(session, dbmodel, item, keywords,need_repet=False):
-
-        if not need_repet: return item
-        try:
-            result = session.query(dbmodel.id).filter_by(cid=keywords).first()
-        except Exception as e:
-            session.rollback()
-            result = 1
-
-        if result:
-            logging.info('**********************save to mysql ==> repet:\n%s' % item)
-        else:
-            return item
+    def db_search(session, db_model, keywords):
+        '''by cid'''
+        result = session.query(db_model.id).filter_by(cid=keywords).first()
+        return result
 
 
 if __name__ == '__main__':

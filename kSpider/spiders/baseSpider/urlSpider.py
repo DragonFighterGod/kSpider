@@ -14,22 +14,30 @@ from kSpider.settings import REDIS_HOST,REDIS_PORT,REDIS_PASSWORD
 
 
 class UrlSpider(GenSpider):
+    # override
     name = 'url_spider'
-
-    redis_key = 'request:spider'
+    # override
+    redis_key = 'url_spider'
 
     redis = Redis(REDIS_HOST,port=int(REDIS_PORT),password=REDIS_PASSWORD)
+
     url_count = 0
 
+    # override
     def start_requests(self):
         pass
 
+
     def add_url(self, url):
         if url:
-            self.url_count = self.redis.lpush(self.repet_key, url)
-            # self.url_count = self.redis.sadd(self.repet_key, url)
-            self.logger.info('url_count===>:%s' % self.url_count)
+            self.url_count = self.redis.lpush(self.redis_key, url)
+            # self.url_count = self.redis.sadd(self.redis_key, url)
+            self.logger.info('url_count ===>:%s' % self.url_count)
+        else:
+            self.logger.info('url ===> error: no url')
 
+
+    ### overried
     def url_parse(self, response):
         self.add_url("url")
         pass

@@ -21,6 +21,8 @@ class FruitSpider(GenSpider):
     百度图片：水果
     '''
     name = fruits_spider
+
+
     base_url = "https://image.baidu.com"
 
     custom_settings = GenSpider.custom_settings.copy()

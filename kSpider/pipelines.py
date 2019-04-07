@@ -7,7 +7,6 @@
 
 import json
 import re
-from scrapy.utils.serialize import ScrapyJSONEncoder
 # from kafka.producer import SimpleProducer
 # from kafka.client import KafkaClient
 
@@ -16,25 +15,9 @@ from scrapy import Request
 from scrapy.exceptions import DropItem
 from scrapy.exporters import JsonItemExporter
 
+from kSpider.db.sqlBase import BaseModel, Session
 from kSpider.db.mongoBase import MongoHandler, MongoHandler2
-from kSpider.db.sqlBase import engine, get_sqlsession, create_newtable
 from kSpider.db.config import HOST, DB_NAME, MONGO_PORT, MONGO_ADMIN_PWD, MONGO_USER
-
-
-def clear_item(item):
-    '''item 去除\b\t等,ID to String,'''
-    _item = {}
-    for k, v in item.items():
-        if v:
-            _v = ''.join(str(v).split()).replace('👍', '').replace('🤗', '').replace('👌', '').replace('🌹',
-                                                                                                       '').replace('👍',
-                                                                                                                   '')
-        else:
-            _v = ''
-
-        _item[k] = _v
-
-    return _item
 
 
 def get_attr(spider, attr, df):
@@ -71,11 +54,6 @@ class JsonItemExporterPipline:
     scrapy 内置的json 导出
     '''
 
-    # def __init__(self,filename='default.json'):
-    #     self.file = open(filename, 'wb')
-    #     self.exporter = JsonItemExporter(self.file, encoding='utf-8', ensure_ascii=False)  # JsonItemExporter
-    #     self.exporter.start_exporting()  # 开始写入
-
     def open_spider(self, spider):
         filename = spider.name + '.json'
 
@@ -98,24 +76,40 @@ class JsonItemExporterPipline:
 
 
 class BaseSQLPipeline(object):
-    # def __init__(self):
-    #     self.session = get_sqlsession(engine)
-    #     create_newtable(engine)
-
-
     def open_spider(self, spider):
-        self.session = get_sqlsession(engine)
-        create_newtable(engine)
+
+        # BaseModel.drop_db()
+        BaseModel.init_db()  # 建表
+
+        self.session = Session()  # mysql_sesion
+
         self.need_repet = get_attr(spider, 'need_repet', df=False)
 
     def close_spider(self, spider):
         self.session.close()
 
+    ### override
     def process_item(self, item, spider):
         # do something ,在子类实现item操作
 
-        item = clear_item(item)
+        item = self.clear_item(item)
         return item
+
+    def clear_item(self, item):
+        '''item 去除\b\t等,ID to String,'''
+        _item = {}
+        for k, v in item.items():
+            if v:
+                _v = ''.join(str(v).split()).replace('👍', '').replace('🤗', '').replace('👌', '').replace('🌹','') \
+                    .replace('👍', '').replace('🔥', '').replace('🌟', '').replace('⭐ ', '') \
+                    .replace('\\n', '').replace('\\t','')\
+                    .replace(' ', '').replace( '\\r','')
+            else:
+                _v = ''
+
+            _item[k] = _v
+
+        return _item
 
 
 class BaseMongoPipeline(object):
@@ -136,10 +130,10 @@ class BaseMongoPipeline(object):
                                   pwd=self.pwd, db=self.db)
 
     def close_spider(self, spider):
-        self.mongo.close()
+        # self.mongo.close()
+        pass
 
     def process_item(self, item, spider):
-        item = clear_item(item)
         need_repet = get_attr(spider, 'need_repet', df=False)
         repet_key = get_attr(spider, 'repet_key', df='url')
 
@@ -169,7 +163,6 @@ class BaseMongoPipeline2:
         self.mongo.close()
 
     def process_item(self, item, spider):
-        item = clear_item(item)
         need_repet = get_attr(spider, 'need_repet', df=False)
         repet_key = get_attr(spider, 'repet_key', df='url')
 

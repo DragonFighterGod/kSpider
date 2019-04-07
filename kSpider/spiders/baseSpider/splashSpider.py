@@ -13,19 +13,22 @@ import scrapy
 from scrapy_splash import SplashRequest
 
 class SplashSpider(scrapy.Spider):
+    # override
     name = "splash"
 
-    allowed_domains = []
-    start_urls = []
-    base_url = ''
-    cookies = {}
 
+    # 登录态
+    cookies = {}
+    str_cookies = ''
 
     # 可选参数：
     collection_name = ''  # 默认collection_name = spider.name
     need_repet = False  # 默认不查询去重
-    repet_key = ''  # 查询key
+    repet_key = ''  # 查询key,限mongo
 
+    allowed_domains = []
+    start_urls = []
+    base_url = ''
 
     # splash设置
     DUPEFILTER_CLASS = 'scrapy_splash.SplashAwareDupeFilter'
@@ -37,14 +40,27 @@ class SplashSpider(scrapy.Spider):
                                                   'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware': 810,},
                        'ITEM_PIPELINES': {'kSpider.pipelines.BaseMongoPipeline2': 300, }}
 
+    # override
     def start_requests(self):
         for url in self.start_urls:
             # yield SplashRequest(url, endpoint="execute",callback=self.parse_item,args={'wait':3,'lua_source':SplashApi.lua_scroll,'proxy':'http://http://proxy_ip:proxy_port'})
             yield SplashRequest(url, endpoint="execute",callback=self.parse_item, args={'wait': 3, 'lua_source': SplashApi.lua_scroll_2})
 
+    # override
     def parse_item(self, response):
         pass
 
+
+    def string_to_dict(self, str_cookies):  # for cookies
+        cookies_dict = {}
+        if str_cookies:
+            items = str_cookies.split(';')
+            for item in items:
+                key = item.split('=')[0].replace(' ', '')
+                value = item.split('=')[1]
+                cookies_dict[key] = value
+
+        return cookies_dict
 
 
 class SplashApi:

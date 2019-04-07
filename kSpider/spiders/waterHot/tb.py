@@ -11,13 +11,12 @@ __mtime__ = '2019/3/18'
 
 import json
 
-import logging
 import scrapy
 from sqlalchemy import Column, String, Text
 
 from kSpider.db.sqlBase import BaseModel
 from kSpider.spiders.baseSpider.genSpider import GenSpider
-from kSpider.pipelines import BaseSQLPipeline, clear_item
+from kSpider.pipelines import BaseSQLPipeline
 
 tbWaterHot_spider = 'tb_waterHot'
 
@@ -27,15 +26,15 @@ class TBSpider(GenSpider):
     '''
     name = tbWaterHot_spider
     custom_settings = GenSpider.custom_settings.copy()
-    # custom_settings['ITEM_PIPELINES'] = {'kSpider.spiders.waterHot.tb.TbMysqlPipeline': 301}
-    custom_settings['DOWNLOAD_DELAY'] = 6
+    custom_settings['ITEM_PIPELINES'] = {'kSpider.spiders.waterHot.tb.TbSqlPipeline': 301}
+    # custom_settings['DOWNLOAD_DELAY'] = 6
 
     collection_name = 'tb_waterHot'
     need_repet = True  # 启用查询去重
     repet_key = 'cid'
     def start_requests(self):
         page = 1
-        maxPage = 3
+        maxPage = 2
         # maxPage = 100
         for i in range(page, maxPage):
             url = "https://rate.tmall.com/list_detail_rate.htm?itemId=558046492248&spuId=874396241&sellerId=1652490016&order=3&currentPage={}&append=0&content=1&tagId=&posi=&picture=&groupId=&ua=098%23E1hvKvvxvcGvUvCkvvvvvjiPRLq9tjYbRFS9sjljPmPhsjiRRFq9zjlhR2zZ0jrmRphvChCvvvmCvpvZ7DK6MQSw7DiacoM5Mvr4BHdLz6krvpvEphR%2Fh2GvpuWcdphvhZ3U913Ovh8wDMuHiLJqWDWQdphvmZC2bBvJvhC9f46CvCEEoiWpBpCvBUsSSfV7%2BF3WWDRjvpvhphhvv8wCvvBvpvpZmphvLhR9FpmFjLEcnhjEKBmAVAQaUExreut%2BCc6OfaAK5zECwhcI0E%2BXaxy0747BhC3qVmHoDOvXVcIUExjxALwp8BpDN%2B3l51rzpziPlWktvpvIphvvvvvvphCvpvs%2FvvC2GZCvjvUvvhBGphvwv9vvBHtvpCQmvvChcuyCvv3vpvoD1Y1JIIyCvvXmp99hetyCvpvVphhvvvvv2QhvCvvvMMGtvpvhphvvv86CvCHUoY9pTpCvBlIpNpZTRFE5286CvvDvpGZpSpCvoNervpvEph8JV29vp225dphvmZC2nCvcvhVB846CvvDvpxOp%2BvCmeE%2FrvpvBohShHCyvpuIB7z6HRFIAXQQ%3D&needFold=0&_ksTS=1552894666346_1590&callback=jsonp1591".format(
@@ -70,17 +69,16 @@ class TbWaterHotItem(scrapy.Item):
     commentTime = scrapy.Field()  # 追评时间
     content = scrapy.Field()  # 追评
 
-class TbMysqlPipeline(BaseSQLPipeline):
+class TbSqlPipeline(BaseSQLPipeline):
     def process_item(self, item, spider):
-        item = clear_item(item)
-        _item = TbMysql.db_distinct(self.session, TbMysql, item, item['cid'],self.need_repet)
-        TbMysql.save_mode(self.session, TbMysql(), _item)
+        item = self.clear_item(item)
+        _item = TbModel.db_distinct(self.session,TbModel, item, item['cid'],self.need_repet)
+        TbModel.save_mode(self.session,TbModel(), _item)
         return item
 
-class TbMysql(BaseModel):
+class TbModel(BaseModel):
 
     __tablename__ = 'tb_waterHot'
-
 
     cid = Column(String(200))
     auctionSku = Column(String(500))  # 颜色分类
@@ -92,21 +90,10 @@ class TbMysql(BaseModel):
     content = Column(Text())   # 追评
 
     @staticmethod
-    def db_distinct(session, dbmodel, item, keywords,need_repet=False):
-        '''
-        by cid
-        '''
-        if not need_repet: return item
-        try:
-            result = session.query(dbmodel.id).filter_by(cid=keywords).first()
-        except Exception as e:
-            session.rollback()
-            result = 1
-
-        if result:
-            logging.info('**********************save to mysql ==> repet:\n%s' % item)
-        else:
-            return item
+    def db_search(session,db_model,keywords):
+        '''by cid'''
+        result = session.query(db_model.id).filter_by(cid=keywords).first()
+        return result
 
 
 if __name__ == '__main__':

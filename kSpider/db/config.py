@@ -14,7 +14,8 @@ __mtime__ = '2019/3/11'
 # MYSQL_ROOT_PWD = '123456'   # for mysql
 
 
-HOST = '200.200.200.7'
+# HOST = '200.200.200.7'
+HOST='192.168.199.139'
 
 MONGO_PORT = '27018'
 MONGO_USER = 'root'

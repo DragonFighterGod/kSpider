@@ -25,6 +25,7 @@ class LumiSpider(GenSpider):
 
     '''
     name = lumi_spider
+
     base_url = "http://www.lumiunited.com"
 
     def start_requests(self):
