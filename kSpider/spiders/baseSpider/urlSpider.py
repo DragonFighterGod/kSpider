@@ -19,7 +19,7 @@ class UrlSpider(GenSpider):
     # override
     redis_key = 'url_spider'
 
-    redis = Redis(REDIS_HOST,port=int(REDIS_PORT),password=REDIS_PASSWORD)
+    redis = Redis(REDIS_HOST,port=int(REDIS_PORT),password=REDIS_PASSWORD,socket_connect_timeout=20)
 
     url_count = 0
 

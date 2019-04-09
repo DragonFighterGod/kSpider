@@ -25,7 +25,7 @@ class CrawlSpider(CrawlSpider):
     # 可选参数：
     collection_name = ''  # 默认collection_name = spider.name
     need_repet = False  # 默认不查询去重
-    repet_key = ''  # 查询key,限mongo
+    repet_key = ''      # 查询key,限mongo
 
     allowed_domains = []
     start_urls = []

@@ -16,19 +16,24 @@ from sqlalchemy import create_engine, Column, String, Integer
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
-from kSpider.db.config import HOST, DB_NAME, MYSQL_ROOT_PWD, MYSQL_USER, MYSQL_PORT
+from kSpider.db.config import MYSQLDB
 
 engine = create_engine(
-    'mysql+pymysql://{user}:{pwd}@{host}:{port}/{db_name}?charset=utf8'.format(user=MYSQL_USER, pwd=MYSQL_ROOT_PWD,
-                                                                               host=HOST, port=MYSQL_PORT,
-                                                                               db_name=DB_NAME), echo=False)
+    'mysql+pymysql://{user}:{pwd}@{host}:{port}/{db}?charset=utf8'.format(user=MYSQLDB['user'], pwd=MYSQLDB['pwd'],\
+                                                                          host=MYSQLDB['host'],port=MYSQLDB['port'], db=MYSQLDB['db']),echo=True)
+
 
 # engine = create_engine(
-#     'mysql+pymysql://{user}:{pwd}@{host}:{port}/{db_name}?autocommit=true'\
-#         .format(user=MYSQL_USER,pwd=MYSQL_ROOT_PWD,host=HOST,port=MYSQL_PORT,db_name=DB_NAME),echo=False)
-#
+#     'mysql+pymysql://{user}:{pwd}@{host}:{port}/{db}?autocommit=true&charset=utf8'.format(user=MYSQLDB['user'], pwd=MYSQLDB['pwd'],
+#                                                                                host=MYSQLDB['host'],
+#                                                                                port=MYSQLDB['port'], db=MYSQLDB['db']),
+#     echo=False)
+
+
+
 
 '''
+# 手动建库：spider
 CREATE DATABASE IF NOT EXISTS spider default charset utf8 COLLATE utf8_general_ci;
 flush privileges;
 
@@ -36,10 +41,7 @@ flush privileges;
 
 Base = declarative_base()
 
-# mysql_session
-
 Session = sessionmaker(bind=engine)
-
 
 class BaseModel(Base):
     __abstract__ = True
@@ -68,11 +70,12 @@ class BaseModel(Base):
                 setattr(model_obj, k, str(v))
 
     @classmethod
-    def save_mode(cls,session, object_model, item=None):
+    def save_mode(cls, session, object_model, item=None):
         if item:
             if isinstance(item, Item):
-                item_data = item.__dict__['_values']
 
+                item_data = dict(item)
+                print(item_data)
             elif isinstance(item, dict):
                 item_data = item
             else:
@@ -93,7 +96,7 @@ class BaseModel(Base):
 
     @staticmethod
     @contextmanager
-    def auto_commit():
+    def auto_commit(session):
         try:
             yield
             session.commit()
@@ -101,14 +104,14 @@ class BaseModel(Base):
             session.rollback()
 
     @classmethod
-    def db_distinct(cls, session,db_model, item, keywords, need_repet=False):
+    def db_distinct(cls, session, db_model, item, keywords, need_repet=False):
         '''
         Db 查询去重-可选
         '''
         if not need_repet: return item
 
         try:
-            result = cls.db_search(session,db_model, keywords)
+            result = cls.db_search(session, db_model, keywords)
             if result:
                 logging.info('**********************save from mysql ==> repet:\n%s' % item)
                 return False
@@ -121,7 +124,7 @@ class BaseModel(Base):
 
     ### override
     @staticmethod
-    def db_search(session,db_model, keywords):
+    def db_search(session, db_model, keywords):
         '''默认通过 url'''
         result = session.query(db_model.id).filter_by(url=keywords).first()
         return result

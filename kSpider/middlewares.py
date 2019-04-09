@@ -64,8 +64,12 @@ class SeleniumDownloaderMiddleware:
         self.browser.delete_all_cookies()
         self.browser.quit()
 
+    # override
     def do_something(self):
         #
+        # do something
+        # js_down = 'var q=document.documentElement.scrollTop=10000'
+        # self.browser.execute_script(js_down)
 
         pass
 
@@ -75,9 +79,6 @@ class SeleniumDownloaderMiddleware:
         try:
             self.browser.get(request.url)
 
-            # do something
-            # js_down = 'var q=document.documentElement.scrollTop=10000'
-            # self.browser.execute_script(js_down)
             self.do_something()
 
             page_source = self.browser.page_source

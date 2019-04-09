@@ -17,7 +17,7 @@ from scrapy.exporters import JsonItemExporter
 
 from kSpider.db.sqlBase import BaseModel, Session
 from kSpider.db.mongoBase import MongoHandler, MongoHandler2
-from kSpider.db.config import HOST, DB_NAME, MONGO_PORT, MONGO_ADMIN_PWD, MONGO_USER
+from kSpider.db.config import MONGODB
 
 
 def get_attr(spider, attr, df):
@@ -81,7 +81,7 @@ class BaseSQLPipeline(object):
         # BaseModel.drop_db()
         BaseModel.init_db()  # 建表
 
-        self.session = Session()  # mysql_sesion
+        self.session = Session()  # 创建 mysql_session 对象
 
         self.need_repet = get_attr(spider, 'need_repet', df=False)
 
@@ -90,20 +90,21 @@ class BaseSQLPipeline(object):
 
     ### override
     def process_item(self, item, spider):
-        # do something ,在子类实现item操作
+        # do something ,在子类实现item 保存操作
 
         item = self.clear_item(item)
         return item
 
     def clear_item(self, item):
-        '''item 去除\b\t等,ID to String,'''
+        '''item 去除\b\t等,ID to String,  待优化'''
         _item = {}
         for k, v in item.items():
             if v:
-                _v = ''.join(str(v).split()).replace('👍', '').replace('🤗', '').replace('👌', '').replace('🌹','') \
-                    .replace('👍', '').replace('🔥', '').replace('🌟', '').replace('⭐ ', '') \
-                    .replace('\\n', '').replace('\\t','')\
-                    .replace(' ', '').replace( '\\r','')
+                _v = ''.join(str(v).split()).replace('👍', '').replace('🤗', '').replace('👌', '').replace('🌹',
+                                                                                                           '').replace(
+                    '👍', '').replace('🔥', '').replace('🌟', '').replace('⭐ ', '').replace('\\n', '').replace('\\t',
+                                                                                                               '').replace(
+                    ' ', '').replace('\\r', '')
             else:
                 _v = ''
 
@@ -118,11 +119,11 @@ class BaseMongoPipeline(object):
        两个爬虫同时调用会出现: N1 关闭爬虫时会调用 loop.close(),导致N2没有 loop
        非得使用的话，注释 close_spider() 方法中的 self.mongo.close() 即可
     '''
-    host = HOST
-    port = MONGO_PORT
-    user = MONGO_USER
-    pwd = MONGO_ADMIN_PWD
-    db = DB_NAME
+    host = MONGODB['host']  # for son_Pipeline override
+    port = MONGODB['port']
+    user = MONGODB['user']
+    pwd = MONGODB['pwd']
+    db = MONGODB['db']
 
     def open_spider(self, spider):
         collection_name = get_attr(spider, 'collection_name', df=spider.name)
@@ -147,12 +148,11 @@ class BaseMongoPipeline(object):
 
 class BaseMongoPipeline2:
     '''非异步mongo'''
-    host = HOST
-    port = MONGO_PORT
-    user = MONGO_USER
-    pwd = MONGO_ADMIN_PWD
-
-    db = DB_NAME
+    host = MONGODB['host']  # for son_Pipeline override
+    port = MONGODB['port']
+    user = MONGODB['user']
+    pwd = MONGODB['pwd']
+    db = MONGODB['db']
 
     def open_spider(self, spider):
         collection_name = get_attr(spider, 'collection_name', df=spider.name)

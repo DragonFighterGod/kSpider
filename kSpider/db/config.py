@@ -9,21 +9,16 @@ __mtime__ = '2019/3/11'
 
 """
 
-# HOST = 'localhost'          # for mysql&&mongodb
-# USER = 'root'
-# MYSQL_ROOT_PWD = '123456'   # for mysql
+
+DEV_MONGO = {'host': '200.200.200.7', 'port': '27018', 'user': 'root', 'pwd': '123456', 'db': 'spider'}
+
+DEV_MYSQL = {'host': '200.200.200.7', 'port': '3307', 'user': 'root', 'pwd': '123456', 'db': 'spider'}
 
 
-# HOST = '200.200.200.7'
-HOST='192.168.199.139'
+MONGODB = DEV_MONGO
 
-MONGO_PORT = '27018'
-MONGO_USER = 'root'
-MONGO_ADMIN_PWD = '123456'
+MYSQLDB = DEV_MYSQL
 
-MYSQL_PORT = '3307'
-MYSQL_USER = 'root'
-MYSQL_ROOT_PWD = '123456'
 
-DB_NAME = 'spider'      # for mysql&&mongodb
 
+# mysql,mongodb,redis 密码都是123465，自行百度修改

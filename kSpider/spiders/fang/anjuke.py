@@ -47,12 +47,12 @@ class AjkSpider(GenSpider):
             if url:
                 yield response.follow(url, callback=self.parse_detail, meta={'city': city})
 
-        # # 下一页
-        # next_page = response.xpath('//div[@class="pagination"]/a[last()]/text()').extract_first()
-        # if next_page == '下一页':
-        #     next_url = response.xpath('//div[@class="pagination"]/a[last()]/@href').extract_first()
-        #     if next_url:
-        #         yield scrapy.Request(next_url, callback=self.parse_list, meta={'city': city})
+        # 下一页
+        next_page = response.xpath('//div[@class="pagination"]/a[last()]/text()').extract_first()
+        if next_page == '下一页':
+            next_url = response.xpath('//div[@class="pagination"]/a[last()]/@href').extract_first()
+            if next_url:
+                yield scrapy.Request(next_url, callback=self.parse_list, meta={'city': city})
 
     def parse_detail(self, response):
         item = AjkItem()

@@ -2,24 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5126155e-20d4-4c01-8f0e-78619b06c3e4" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/deploy_document/deploy_document.docx" afterPath="$PROJECT_DIR$/deploy_document/deploy_document.docx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/kSpider.iml" afterPath="$PROJECT_DIR$/.idea/kSpider.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kSpider/agents2.py" afterPath="$PROJECT_DIR$/kSpider/agents2.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kSpider/db/config.py" afterPath="$PROJECT_DIR$/kSpider/db/config.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kSpider/db/mongoBase.py" afterPath="$PROJECT_DIR$/kSpider/db/mongoBase.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kSpider/db/sqlBase.py" afterPath="$PROJECT_DIR$/kSpider/db/sqlBase.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kSpider/middlewares.py" afterPath="$PROJECT_DIR$/kSpider/middlewares.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kSpider/pipelines.py" afterPath="$PROJECT_DIR$/kSpider/pipelines.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kSpider/settings.py" afterPath="$PROJECT_DIR$/kSpider/settings.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kSpider/spiders/baseSpider/crawlSpider.py" afterPath="$PROJECT_DIR$/kSpider/spiders/baseSpider/crawlSpider.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kSpider/spiders/baseSpider/detailSpider.py" afterPath="$PROJECT_DIR$/kSpider/spiders/baseSpider/detailSpider.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kSpider/spiders/baseSpider/genSpider.py" afterPath="$PROJECT_DIR$/kSpider/spiders/baseSpider/genSpider.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kSpider/spiders/baseSpider/splashSpider.py" afterPath="$PROJECT_DIR$/kSpider/spiders/baseSpider/splashSpider.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kSpider/spiders/baseSpider/urlSpider.py" afterPath="$PROJECT_DIR$/kSpider/spiders/baseSpider/urlSpider.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kSpider/spiders/fruitsImg/fruits.py" afterPath="$PROJECT_DIR$/kSpider/spiders/fruitsImg/fruits.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kSpider/spiders/limuProblem/lumi.py" afterPath="$PROJECT_DIR$/kSpider/spiders/limuProblem/lumi.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kSpider/spiders/fang/anjuke.py" afterPath="$PROJECT_DIR$/kSpider/spiders/fang/anjuke.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kSpider/spiders/fang/deer.py" afterPath="$PROJECT_DIR$/kSpider/spiders/fang/deer.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kSpider/spiders/qichacha/qccDetail.py" afterPath="$PROJECT_DIR$/kSpider/spiders/qichacha/qccDetail.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kSpider/spiders/qichacha/qccUrl.py" afterPath="$PROJECT_DIR$/kSpider/spiders/qichacha/qccUrl.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kSpider/spiders/tianyancha/tycDetail.py" afterPath="$PROJECT_DIR$/kSpider/spiders/tianyancha/tycDetail.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kSpider/spiders/tianyancha/tycUrl.py" afterPath="$PROJECT_DIR$/kSpider/spiders/tianyancha/tycUrl.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kSpider/spiders/waterHot/jd.py" afterPath="$PROJECT_DIR$/kSpider/spiders/waterHot/jd.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kSpider/spiders/waterHot/tb.py" afterPath="$PROJECT_DIR$/kSpider/spiders/waterHot/tb.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/kSpider/spiders/het.py" afterPath="$PROJECT_DIR$/kSpider/spiders/k.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -29,33 +31,34 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/kSpider$tycDetail.coverage" NAME="tycDetail Coverage Results" MODIFIED="1554626939938" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/kSpider/spiders/tianyancha" />
-    <SUITE FILE_PATH="coverage/kSpider$qccUrl.coverage" NAME="qccUrl Coverage Results" MODIFIED="1554627820047" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/kSpider/spiders/qichacha" />
-    <SUITE FILE_PATH="coverage/kSpider$qccDetail.coverage" NAME="qccDetail Coverage Results" MODIFIED="1554627936235" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/kSpider/spiders/qichacha" />
-    <SUITE FILE_PATH="coverage/kSpider$deer.coverage" NAME="deer Coverage Results" MODIFIED="1554629376067" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/kSpider/spiders/fang" />
-    <SUITE FILE_PATH="coverage/kSpider$detailSpider.coverage" NAME="detailSpider Coverage Results" MODIFIED="1554627624015" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/kSpider/spiders/baseSpider" />
-    <SUITE FILE_PATH="coverage/hetSpider$run2.coverage" NAME="run2 Coverage Results" MODIFIED="1553048951723" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/hetSpider$Nginx.coverage" NAME="Nginx Coverage Results" MODIFIED="1554270634447" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/hetSpider$mongoBase.coverage" NAME="mongoBase Coverage Results" MODIFIED="1554172422238" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hetSpider/db" />
-    <SUITE FILE_PATH="coverage/kSpider$tycUrl.coverage" NAME="tycUrl Coverage Results" MODIFIED="1554625412419" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/kSpider/spiders/tianyancha" />
     <SUITE FILE_PATH="coverage/kSpider$fruits.coverage" NAME="fruits Coverage Results" MODIFIED="1554628040212" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/kSpider/spiders/fruitsImg" />
-    <SUITE FILE_PATH="coverage/hetSpider$tb.coverage" NAME="tb Coverage Results" MODIFIED="1554112235778" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hetSpider/spiders/waterHot" />
-    <SUITE FILE_PATH="coverage/hetSpider$jd.coverage" NAME="jd Coverage Results" MODIFIED="1554174909180" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hetSpider/spiders/waterHot" />
-    <SUITE FILE_PATH="coverage/kSpider$jd.coverage" NAME="jd Coverage Results" MODIFIED="1554623248190" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/kSpider/spiders/waterHot" />
-    <SUITE FILE_PATH="coverage/hetSpider$urlSpider.coverage" NAME="urlSpider Coverage Results" MODIFIED="1554175003620" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hetSpider/spiders/baseSpider" />
-    <SUITE FILE_PATH="coverage/kSpider$lumi.coverage" NAME="lumi Coverage Results" MODIFIED="1554627983238" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/kSpider/spiders/limuProblem" />
-    <SUITE FILE_PATH="coverage/hetSpider$lumi.coverage" NAME="lumi Coverage Results" MODIFIED="1554281941285" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hetSpider/spiders/limuProblem" />
-    <SUITE FILE_PATH="coverage/hetSpider$base.coverage" NAME="base Coverage Results" MODIFIED="1552875640161" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hetSpider/js" />
-    <SUITE FILE_PATH="coverage/hetSpider$sqlBase.coverage" NAME="sqlBase Coverage Results" MODIFIED="1554112443853" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hetSpider/db" />
-    <SUITE FILE_PATH="coverage/hetSpider$run.coverage" NAME="run Coverage Results" MODIFIED="1554273015957" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/kSpider$qccDetail.coverage" NAME="qccDetail Coverage Results" MODIFIED="1554627936235" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/kSpider/spiders/qichacha" />
+    <SUITE FILE_PATH="coverage/kSpider$tycUrl.coverage" NAME="tycUrl Coverage Results" MODIFIED="1554625412419" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/kSpider/spiders/tianyancha" />
+    <SUITE FILE_PATH="coverage/kSpider$tycDetail.coverage" NAME="tycDetail Coverage Results" MODIFIED="1554626939938" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/kSpider/spiders/tianyancha" />
     <SUITE FILE_PATH="coverage/hetSpider$fruits.coverage" NAME="fruits Coverage Results" MODIFIED="1554276887923" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hetSpider/spiders/fruitsImg" />
+    <SUITE FILE_PATH="coverage/hetSpider$run2.coverage" NAME="run2 Coverage Results" MODIFIED="1553048951723" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/kSpider$qccUrl.coverage" NAME="qccUrl Coverage Results" MODIFIED="1554627820047" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/kSpider/spiders/qichacha" />
+    <SUITE FILE_PATH="coverage/hetSpider$base.coverage" NAME="base Coverage Results" MODIFIED="1552875640161" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hetSpider/js" />
     <SUITE FILE_PATH="coverage/kSpider$anjuke.coverage" NAME="anjuke Coverage Results" MODIFIED="1554632450673" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/kSpider/spiders/fang" />
+    <SUITE FILE_PATH="coverage/hetSpider$mongoBase.coverage" NAME="mongoBase Coverage Results" MODIFIED="1554172422238" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hetSpider/db" />
+    <SUITE FILE_PATH="coverage/kSpider$lumi.coverage" NAME="lumi Coverage Results" MODIFIED="1554627983238" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/kSpider/spiders/limuProblem" />
+    <SUITE FILE_PATH="coverage/hetSpider$sqlBase.coverage" NAME="sqlBase Coverage Results" MODIFIED="1554112443853" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hetSpider/db" />
+    <SUITE FILE_PATH="coverage/kSpider$deer.coverage" NAME="deer Coverage Results" MODIFIED="1554629376067" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/kSpider/spiders/fang" />
+    <SUITE FILE_PATH="coverage/hetSpider$tb.coverage" NAME="tb Coverage Results" MODIFIED="1554112235778" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hetSpider/spiders/waterHot" />
+    <SUITE FILE_PATH="coverage/hetSpider$Nginx.coverage" NAME="Nginx Coverage Results" MODIFIED="1554270634447" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/kSpider$jd.coverage" NAME="jd Coverage Results" MODIFIED="1554802068201" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/kSpider/spiders/waterHot" />
+    <SUITE FILE_PATH="coverage/kSpider$detailSpider.coverage" NAME="detailSpider Coverage Results" MODIFIED="1554627624015" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/kSpider/spiders/baseSpider" />
+    <SUITE FILE_PATH="coverage/hetSpider$urlSpider.coverage" NAME="urlSpider Coverage Results" MODIFIED="1554175003620" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hetSpider/spiders/baseSpider" />
+    <SUITE FILE_PATH="coverage/kSpider$config.coverage" NAME="config Coverage Results" MODIFIED="1554799173336" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/kSpider/db" />
+    <SUITE FILE_PATH="coverage/hetSpider$lumi.coverage" NAME="lumi Coverage Results" MODIFIED="1554281941285" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hetSpider/spiders/limuProblem" />
     <SUITE FILE_PATH="coverage/hetSpider$splashSpider.coverage" NAME="splashSpider Coverage Results" MODIFIED="1553499010790" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hetSpider/spiders/baseSpider" />
-    <SUITE FILE_PATH="coverage/kSpider$tb.coverage" NAME="tb Coverage Results" MODIFIED="1554623722298" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/kSpider/spiders/waterHot" />
+    <SUITE FILE_PATH="coverage/hetSpider$jd.coverage" NAME="jd Coverage Results" MODIFIED="1554174909180" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hetSpider/spiders/waterHot" />
+    <SUITE FILE_PATH="coverage/hetSpider$run.coverage" NAME="run Coverage Results" MODIFIED="1554273015957" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/kSpider$tb.coverage" NAME="tb Coverage Results" MODIFIED="1554802281143" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/kSpider/spiders/waterHot" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -67,36 +70,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>&lt;strong</find>
-      <find>g</find>
+      <find>session</find>
+      <find>item.__dict__['_values']</find>
+      <find>item.__dict__['_values'</find>
+      <find>item.__dict__['_values</find>
+      <find>item.__dict__['_value</find>
+      <find>item.__dict__['_valu</find>
+      <find>item.__dict__['_val</find>
+      <find>item.__dict__['_va</find>
+      <find>item.__dict__['_v</find>
+      <find>item.__dict__['_</find>
+      <find>item.__dict__['</find>
+      <find>item.__dict__[</find>
+      <find>item.__dict__</find>
+      <find>repet</find>
+      <find>repet_k</find>
+      <find>repet_ke</find>
+      <find>repet_key</find>
+      <find>lpush</find>
+      <find>socket_connect_timeout</find>
+      <find>k</find>
       <find>h</find>
       <find>het</find>
-      <find>.copy()</find>
-      <find>get_attr</find>
-      <find>close</find>
-      <find>url</find>
-      <find>sessio</find>
-      <find>str_cookies</find>
-      <find>self.string_to_dict(</find>
-      <find>self.string_to_dict</find>
-      <find>override</find>
-      <find>rep【</find>
-      <find>rep</find>
-      <find>exist</find>
       <find>s</find>
-      <find>session</find>
-      <find>mongodb_jd_waterHot</find>
-      <find>re[</find>
-      <find>re</find>
-      <find>clear_item</find>
-      <find>repet_key</find>
-      <find>replace</find>
-      <find>db_search</find>
-      <find>db_distinct</find>
-      <find>error</find>
-      <find>fail</find>
-      <find>kSpider.spiders.fang.anjuk</find>
-      <find>tags</find>
+      <find>str</find>
+      <find>str_</find>
+      <find>str_c</find>
+      <find>str_co</find>
+      <find>str_cook</find>
+      <find>str_cooki</find>
+      <find>str_cookies</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -107,6 +110,8 @@
     <dirStrings>
       <dir>D:\develop\workspace\hetSpider</dir>
       <dir>D:\workspace\hetSpider\hetSpider\spiders</dir>
+      <dir>D:\workspace\kSpider\kSpider\spiders\fang\vcode</dir>
+      <dir>D:\workspace\kSpider\deploy_document</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -115,7 +120,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/jd_waterhot.txt" />
         <option value="$PROJECT_DIR$/hetSpider/run2.py" />
         <option value="$PROJECT_DIR$/hetSpider/db/mongoDb.py" />
         <option value="$PROJECT_DIR$/run2.py" />
@@ -145,27 +149,28 @@
         <option value="$PROJECT_DIR$/hetSpider/spiders/waterHot/jd.py" />
         <option value="$PROJECT_DIR$/hetSpider/spiders/waterHot/tb.py" />
         <option value="$PROJECT_DIR$/hetSpider/spiders/fruitsImg/fruits.py" />
-        <option value="$PROJECT_DIR$/kSpider/db/config.py" />
-        <option value="$PROJECT_DIR$/kSpider/settings.py" />
-        <option value="$PROJECT_DIR$/kSpider/db/sqlBase.py" />
-        <option value="$PROJECT_DIR$/kSpider/spiders/waterHot/jd.py" />
-        <option value="$PROJECT_DIR$/kSpider/db/mongoBase.py" />
         <option value="$PROJECT_DIR$/kSpider/spiders/waterHot/tb.py" />
         <option value="$PROJECT_DIR$/kSpider/agents2.py" />
-        <option value="$PROJECT_DIR$/kSpider/spiders/baseSpider/crawlSpider.py" />
         <option value="$PROJECT_DIR$/kSpider/spiders/baseSpider/detailSpider.py" />
         <option value="$PROJECT_DIR$/kSpider/spiders/baseSpider/splashSpider.py" />
-        <option value="$PROJECT_DIR$/kSpider/spiders/baseSpider/urlSpider.py" />
         <option value="$PROJECT_DIR$/kSpider/spiders/fruitsImg/fruits.py" />
-        <option value="$PROJECT_DIR$/kSpider/spiders/tianyancha/tycUrl.py" />
         <option value="$PROJECT_DIR$/kSpider/spiders/tianyancha/tycDetail.py" />
         <option value="$PROJECT_DIR$/kSpider/spiders/qichacha/qccUrl.py" />
         <option value="$PROJECT_DIR$/kSpider/spiders/qichacha/qccDetail.py" />
         <option value="$PROJECT_DIR$/kSpider/spiders/limuProblem/lumi.py" />
         <option value="$PROJECT_DIR$/kSpider/spiders/fang/deer.py" />
         <option value="$PROJECT_DIR$/kSpider/spiders/baseSpider/genSpider.py" />
-        <option value="$PROJECT_DIR$/kSpider/spiders/fang/anjuke.py" />
+        <option value="$PROJECT_DIR$/kSpider/spiders/waterHot/jd.py" />
         <option value="$PROJECT_DIR$/kSpider/pipelines.py" />
+        <option value="$PROJECT_DIR$/kSpider/db/sqlBase.py" />
+        <option value="$PROJECT_DIR$/kSpider/db/mongoBase.py" />
+        <option value="$PROJECT_DIR$/kSpider/spiders/baseSpider/crawlSpider.py" />
+        <option value="$PROJECT_DIR$/kSpider/spiders/fang/anjuke.py" />
+        <option value="$PROJECT_DIR$/kSpider/middlewares.py" />
+        <option value="$PROJECT_DIR$/kSpider/spiders/baseSpider/urlSpider.py" />
+        <option value="$PROJECT_DIR$/kSpider/settings.py" />
+        <option value="$PROJECT_DIR$/kSpider/spiders/tianyancha/tycUrl.py" />
+        <option value="$PROJECT_DIR$/kSpider/db/config.py" />
       </list>
     </option>
   </component>
@@ -239,139 +244,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="spiders" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kSpider" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kSpider" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kSpider" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spiders" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="waterHot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kSpider" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kSpider" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kSpider" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spiders" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tianyancha" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kSpider" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kSpider" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kSpider" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spiders" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="qichacha" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kSpider" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kSpider" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kSpider" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spiders" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="limuProblem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kSpider" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kSpider" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kSpider" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spiders" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fruitsImg" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kSpider" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kSpider" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kSpider" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spiders" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fang" />
+              <option name="myItemId" value="db" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -383,7 +256,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../fangScrapy" />
+    <property name="last_opened_file_path" value="E:/working/kSpider" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -413,64 +286,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.anjuke">
-    <configuration default="false" name="qccDetail" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/kSpider/spiders/qichacha" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="kSpider" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/kSpider/spiders/qichacha/qccDetail.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="lumi" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/kSpider/spiders/limuProblem" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="kSpider" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/kSpider/spiders/limuProblem/lumi.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="fruits" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/kSpider/spiders/fruitsImg" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="kSpider" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/kSpider/spiders/fruitsImg/fruits.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.tb">
     <configuration default="false" name="deer" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -504,6 +320,63 @@
       <module name="kSpider" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/kSpider/spiders/fang/anjuke.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="config" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/kSpider/db" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="kSpider" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/kSpider/db/config.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="jd" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/kSpider/spiders/waterHot" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="kSpider" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/kSpider/spiders/waterHot/jd.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="tb" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/kSpider/spiders/waterHot" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="kSpider" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/kSpider/spiders/waterHot/tb.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -658,19 +531,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.qccDetail" />
-      <item index="1" class="java.lang.String" itemvalue="Python.lumi" />
-      <item index="2" class="java.lang.String" itemvalue="Python.fruits" />
-      <item index="3" class="java.lang.String" itemvalue="Python.deer" />
-      <item index="4" class="java.lang.String" itemvalue="Python.anjuke" />
+      <item index="0" class="java.lang.String" itemvalue="Python.deer" />
+      <item index="1" class="java.lang.String" itemvalue="Python.anjuke" />
+      <item index="2" class="java.lang.String" itemvalue="Python.config" />
+      <item index="3" class="java.lang.String" itemvalue="Python.jd" />
+      <item index="4" class="java.lang.String" itemvalue="Python.tb" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.anjuke" />
-        <item index="1" class="java.lang.String" itemvalue="Python.deer" />
-        <item index="2" class="java.lang.String" itemvalue="Python.fruits" />
-        <item index="3" class="java.lang.String" itemvalue="Python.lumi" />
-        <item index="4" class="java.lang.String" itemvalue="Python.qccDetail" />
+        <item index="0" class="java.lang.String" itemvalue="Python.tb" />
+        <item index="1" class="java.lang.String" itemvalue="Python.jd" />
+        <item index="2" class="java.lang.String" itemvalue="Python.config" />
+        <item index="3" class="java.lang.String" itemvalue="Python.anjuke" />
+        <item index="4" class="java.lang.String" itemvalue="Python.deer" />
       </list>
     </recent_temporary>
   </component>
@@ -690,24 +563,24 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="0" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13219616" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42381975" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18133047" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32939914" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37446353" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16257995" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32939914" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15665236" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32939914" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -747,71 +620,12 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="76" />
+      <option name="time" value="92" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/kSpider/spiders/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kSpider/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Python36/Lib/site-packages/redis/client.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="605" column="31" lean-forward="false" selection-start-line="605" selection-start-column="23" selection-end-line="605" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Python36/Lib/site-packages/pymongo/mongo_client.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="83" column="8" lean-forward="false" selection-start-line="83" selection-start-column="8" selection-end-line="83" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1.jpg" />
-    <entry file="file://$USER_HOME$/.PyCharm2017.1/system/python_stubs/-1132648187/builtins.py" />
-    <entry file="file://$PROJECT_DIR$/../../Python36/Lib/site-packages/selenium/webdriver/support/wait.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="61" column="26" lean-forward="false" selection-start-line="61" selection-start-column="20" selection-end-line="61" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hetSpider/spiders/limuProblem/lumierr.txt" />
-    <entry file="file://$PROJECT_DIR$/kSpider/spiders/qichacha/other/fullname.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Python36/Lib/site-packages/scrapy/spiders/crawl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="33" column="6" lean-forward="false" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Python36/Lib/site-packages/scrapy/spiders/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="23" column="4" lean-forward="false" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://D:/Python36/Lib/site-packages/scrapy/spiders/__init__.py" />
     <entry file="file://$PROJECT_DIR$/kSpider/spiders/limuProblem/lumi.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="868">
@@ -819,24 +633,263 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kSpider/driver/browser.py">
+    <entry file="file://$PROJECT_DIR$/kSpider/spiders/fang/vcode/anjuke/jiami.js" />
+    <entry file="file://D:/Python36/Lib/site-packages/sqlalchemy/ext/declarative/__init__.py" />
+    <entry file="file://D:/Python36/Lib/site-packages/sqlalchemy/ext/declarative/base.py" />
+    <entry file="file://D:/Python36/Lib/site-packages/sqlalchemy/ext/declarative/api.py" />
+    <entry file="file://D:/Python36/Lib/site-packages/sqlalchemy/orm/session.py" />
+    <entry file="file://D:/Python36/Lib/site-packages/sqlalchemy/engine/interfaces.py" />
+    <entry file="file://D:/Python36/Lib/site-packages/sqlalchemy/engine/base.py" />
+    <entry file="file://D:/Python36/Lib/site-packages/sqlalchemy/sql/ddl.py" />
+    <entry file="file://D:/Python36/Lib/site-packages/sqlalchemy/sql/schema.py" />
+    <entry file="file://D:/Python36/Lib/site-packages/scrapy_redis_bloomfilter/spiders.py" />
+    <entry file="file://$PROJECT_DIR$/kSpider/spiders/qichacha/qcc_urlerr.txt" />
+    <entry file="file://$PROJECT_DIR$/kSpider/spiders/baseSpider/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-171">
-          <caret line="27" column="45" lean-forward="false" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="45" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kSpider/spiders/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kSpider/db/mongoBase.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="124" column="0" lean-forward="true" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
+          <folding>
+            <element signature="e#133#147#0" expanded="false" />
+            <element signature="e#4460#4488#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kSpider/db/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kSpider/spiders/baseSpider/crawlSpider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-47">
+          <caret line="27" column="38" lean-forward="true" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kSpider/spiders/baseSpider/detailSpider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-180">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kSpider/spiders/baseSpider/splashSpider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1505">
+          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kSpider/spiders/fang/vcode/anjuke/anjuke.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-513">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kSpider/spiders/fang/anjuke.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2137">
+          <caret line="54" column="93" lean-forward="true" selection-start-line="54" selection-start-column="93" selection-end-line="54" selection-end-column="93" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kSpider/spiders/fang/deer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1296">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kSpider/spiders/fruitsImg/fruits.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-498">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding>
+            <element signature="e#133#146#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kSpider/spiders/limuProblem/lumi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-237">
+          <caret line="18" column="9" lean-forward="false" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kSpider/spiders/qichacha/qccDetail.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kSpider/spiders/qichacha/qccUrl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-365">
+          <caret line="29" column="20" lean-forward="false" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kSpider/spiders/tianyancha/tycDetail.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2208">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kSpider/agents2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="12" column="14" lean-forward="false" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/kSpider/items.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
+        <state relative-caret-position="323">
           <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nginx.py">
+    <entry file="file://$PROJECT_DIR$/kSpider/middlewares.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-66">
+          <caret line="71" column="46" lean-forward="false" selection-start-line="71" selection-start-column="46" selection-end-line="71" selection-end-column="46" />
+          <folding>
+            <element signature="e#3246#3286#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kSpider/pipelines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1396">
+          <caret line="85" column="13" lean-forward="false" selection-start-line="85" selection-start-column="13" selection-end-line="85" selection-end-column="13" />
+          <folding>
+            <element signature="e#194#205#0" expanded="true" />
+            <element signature="e#651#839#0" expanded="false" />
+            <element signature="e#870#1250#0" expanded="false" />
+            <element signature="e#1288#1959#0" expanded="false" />
+            <element signature="e#2482#3204#0" expanded="false" />
+            <element signature="e#5254#5276#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/develop/python36/Lib/site-packages/redis/client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="606" column="39" lean-forward="false" selection-start-line="606" selection-start-column="17" selection-end-line="606" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kSpider/spiders/baseSpider/urlSpider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="21" column="99" lean-forward="false" selection-start-line="21" selection-start-column="99" selection-end-line="21" selection-end-column="99" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kSpider/spiders/waterHot/tb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="855">
+          <caret line="45" column="37" lean-forward="false" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="37" />
+          <folding>
+            <element signature="e#136#147#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kSpider/spiders/waterHot/jd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2241">
+          <caret line="132" column="48" lean-forward="true" selection-start-line="132" selection-start-column="48" selection-end-line="132" selection-end-column="48" />
+          <folding>
+            <element signature="e#134#145#0" expanded="false" />
+            <element signature="e#5486#5795#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kSpider/spiders/baseSpider/genSpider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="20" column="15" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kSpider/spiders/tianyancha/tycUrl.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="684">
-          <caret line="36" column="19" lean-forward="false" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
+          <caret line="38" column="17" lean-forward="true" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deploy_document/packages.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kSpider/db/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" column="39" lean-forward="false" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="30" column="40" lean-forward="true" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="40" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -844,301 +897,74 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="646">
           <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kSpider/middlewares.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1615">
-          <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kSpider/spiders/fang/vcode/anjuke/jiami.js">
+    <entry file="file://$PROJECT_DIR$/scrapy.cfg">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kSpider/spiders/fang/vcode/anjuke/anjuke.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="849">
-          <caret line="175" column="27" lean-forward="false" selection-start-line="175" selection-start-column="27" selection-end-line="175" selection-end-column="27" />
-          <folding>
-            <element signature="e#176#189#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kSpider/db/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="21" lean-forward="true" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/run.py">
+    <entry file="file://$PROJECT_DIR$/kSpider/spiders/k.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="30" column="40" lean-forward="true" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Python36/Lib/site-packages/sqlalchemy/ext/declarative/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="32" lean-forward="false" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Python36/Lib/site-packages/sqlalchemy/ext/declarative/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="745" column="4" lean-forward="false" selection-start-line="745" selection-start-column="4" selection-end-line="745" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Python36/Lib/site-packages/sqlalchemy/ext/declarative/api.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="284" column="56" lean-forward="false" selection-start-line="284" selection-start-column="56" selection-end-line="284" selection-end-column="56" />
+        <state relative-caret-position="95">
+          <caret line="7" column="13" lean-forward="true" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../Python36/Lib/site-packages/sqlalchemy/orm/session.py">
+    <entry file="file://$PROJECT_DIR$/kSpider/driver/browser.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9239">
-          <caret line="1194" column="8" lean-forward="false" selection-start-line="1194" selection-start-column="8" selection-end-line="1194" selection-end-column="8" />
+        <state relative-caret-position="-3815">
+          <caret line="27" column="45" lean-forward="false" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="45" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../Python36/Lib/site-packages/sqlalchemy/engine/interfaces.py">
+    <entry file="file://$PROJECT_DIR$/kSpider/js/basefunc.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="1162" column="8" lean-forward="false" selection-start-line="1162" selection-start-column="8" selection-end-line="1162" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Python36/Lib/site-packages/sqlalchemy/engine/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="1547" column="8" lean-forward="false" selection-start-line="1547" selection-start-column="8" selection-end-line="1547" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Python36/Lib/site-packages/sqlalchemy/sql/ddl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-304">
-          <caret line="698" column="19" lean-forward="false" selection-start-line="698" selection-start-column="13" selection-end-line="698" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Python36/Lib/site-packages/sqlalchemy/sql/schema.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="4001" column="38" lean-forward="false" selection-start-line="4001" selection-start-column="38" selection-end-line="4001" selection-end-column="38" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kSpider/agents2.py">
+    <entry file="file://$PROJECT_DIR$/kSpider/js/base.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="14" lean-forward="false" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kSpider/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="129" column="10" lean-forward="false" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Python36/Lib/site-packages/scrapy_redis_bloomfilter/spiders.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="124" column="6" lean-forward="false" selection-start-line="124" selection-start-column="6" selection-end-line="124" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kSpider/db/mongoBase.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="72" column="42" lean-forward="false" selection-start-line="72" selection-start-column="42" selection-end-line="72" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kSpider/spiders/qichacha/qcc_urlerr.txt" />
-    <entry file="file://$PROJECT_DIR$/kSpider/spiders/baseSpider/crawlSpider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-169">
-          <caret line="18" column="17" lean-forward="false" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kSpider/spiders/baseSpider/detailSpider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kSpider/spiders/baseSpider/splashSpider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kSpider/spiders/baseSpider/urlSpider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/kSpider/db/sqlBase.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1086">
-          <caret line="43" column="6" lean-forward="false" selection-start-line="43" selection-start-column="6" selection-end-line="43" selection-end-column="6" />
+        <state relative-caret-position="367">
+          <caret line="106" column="70" lean-forward="false" selection-start-line="106" selection-start-column="60" selection-end-line="106" selection-end-column="70" />
           <folding>
             <element signature="e#133#144#0" expanded="true" />
-            <element signature="e#2838#2951#0" expanded="false" />
+            <element signature="e#710#735#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kSpider/spiders/baseSpider/genSpider.py">
+    <entry file="file://$PROJECT_DIR$/kSpider/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="23" column="4" lean-forward="false" selection-start-line="23" selection-start-column="4" selection-end-line="25" selection-end-column="42" />
+        <state relative-caret-position="384">
+          <caret line="126" column="56" lean-forward="false" selection-start-line="126" selection-start-column="56" selection-end-line="126" selection-end-column="56" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kSpider/pipelines.py">
+    <entry file="file://$PROJECT_DIR$/nginx.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding>
-            <element signature="e#194#205#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kSpider/spiders/fang/anjuke.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2660">
-          <caret line="146" column="19" lean-forward="false" selection-start-line="146" selection-start-column="19" selection-end-line="146" selection-end-column="19" />
-          <folding>
-            <element signature="e#134#147#0" expanded="true" />
-            <element signature="e#4499#4591#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kSpider/spiders/fang/deer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="969">
-          <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-          <folding>
-            <element signature="e#24#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kSpider/spiders/fruitsImg/fruits.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding>
-            <element signature="e#133#146#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kSpider/spiders/limuProblem/lumi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="18" column="9" lean-forward="false" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
-          <folding>
-            <element signature="e#134#147#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kSpider/spiders/qichacha/qccDetail.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <element signature="e#24#37#0" expanded="true" />
-            <element signature="e#1655#5425#0" expanded="false" />
-            <element signature="e#5693#6006#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kSpider/spiders/qichacha/qccUrl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <element signature="e#24#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kSpider/spiders/tianyancha/tycDetail.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="31" column="40" lean-forward="false" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
-          <folding>
-            <element signature="e#134#147#0" expanded="true" />
-            <element signature="e#2981#5880#0" expanded="false" />
-            <element signature="e#6424#6737#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kSpider/spiders/waterHot/jd.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="722">
-          <caret line="38" column="23" lean-forward="true" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
-          <folding>
-            <element signature="e#134#145#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kSpider/spiders/waterHot/tb.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="45" column="37" lean-forward="false" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="37" />
-          <folding>
-            <element signature="e#136#147#0" expanded="true" />
-            <element signature="e#2694#2974#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kSpider/spiders/tianyancha/tycUrl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="4" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
-          <folding>
-            <element signature="e#24#37#0" expanded="true" />
-            <element signature="e#3038#3526#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="513">
+          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
